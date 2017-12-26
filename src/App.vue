@@ -1,13 +1,13 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <router-view/>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'app',
+    name: 'App',
     data () {
       return {
         title: document.title

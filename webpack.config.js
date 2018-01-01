@@ -11,12 +11,13 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader']
+        use: ['babel-loader', 'eslint-loader'],
+        exclude: /node_modules/
       },
       {
         test: /\.vue$/,
-        use: 'vue-loader'
+        use: 'vue-loader',
+        exclude: /node_modules/
       }
     ]
   },

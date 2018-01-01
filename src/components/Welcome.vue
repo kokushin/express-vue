@@ -5,7 +5,6 @@
     <router-link to="/users">REST API test</router-link>
     <h2>Vuex test</h2>
     <p><button @click="counter">count++</button> {{ $store.state.count }}</p>
-    <router-view/>
   </div>
 </template>
 

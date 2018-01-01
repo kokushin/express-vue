@@ -1,6 +1,6 @@
 # express-vue
 
-express + vue, vue-router, eslint, webpack 3
+express + vue, vue-router, vuex, eslint, webpack 3
 
 ## development
 

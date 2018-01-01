@@ -1,21 +1,25 @@
 <template>
   <div>
     <p>Welcome to {{ msg }}</p>
-    <user-list/>
+    <h2>Vue-router test</h2>
+    <router-link to="/users">REST API test</router-link>
+    <h2>Vuex test</h2>
+    <p><button @click="counter">count++</button> {{ $store.state.count }}</p>
+    <router-view/>
   </div>
 </template>
 
 <script>
-  import UserList from './UserList'
-
   export default {
     name: 'Welcome',
-    components: {
-      UserList
-    },
     data () {
       return {
         msg: 'Express-Vue 👍'
+      }
+    },
+    methods: {
+      counter () {
+        this.$store.commit('increment')
       }
     }
   }
